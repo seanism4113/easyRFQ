@@ -39,19 +39,24 @@ EasyRFQ is a user-friendly platform designed to streamline the process of creati
 ### Clone this repository
 
 ```bash
-$ git clone https://github.com/seanism4113/Capstone_Project-1.git
-$ cd DreamReads
+$ git clone https://github.com/seanism4113/easyRFQ.git
+$ cd EasyRFQ
 ```
 
-### Create virtual environment and gather requirements
+### Install full-stack dependencies
 
 ```bash
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip3 install -r requirements.txt
+$ npm install
 ```
 
-### Set .env constants
+### Install backend dependencies
+
+```bash
+$ cd easyRFQ-backend
+$ npm install
+```
+
+### Set backend .env constants
 
 ```bash
 $ touch .env
@@ -60,46 +65,73 @@ $ touch .env
 - In the env file you will need to create a constant for:
 
 ```bash
-API_KEY =
-DATABASE_URL =
-SECRET_KEY =
+DATABASE_URL
+NODE_ENV
+SECRET_KEY
 ```
-
-API_KEY is a key obtained from GOOGLE BOOKS API. You MUST have a google account to obtain an API Key.
-[Google Cloud](https://console.cloud.google.com)
-
-- Find APIs & Services from the navigation menu dropdown in the top left
-- Click on Credentials
-- Click Create Credentials --> API Key
 
 DATABASE URL
 
-- Connect to your local database or an online database. Example of connection to postgres: DATABASE_URL ='postgresql:///dreamReads_db'
+- Connect to your local database or an online database. Example of connection to postgres:
+  DATABASE_URL=postgresql:///easy_rfq
+
+NODE_ENV
+
+- NODE_ENV=production
 
 SECRET_KEY
 
 - Create your own secret key. Example SECRET_KEY = 'secretkey'
 
-### Run project
+### Install frontend dependencies
 
 ```bash
-$ flask run --debug
+$ cd ..
+$ cd easyRFQ-frontend
+$ npm install
 ```
 
-### Open page in browser
+### Return to main folder and Run project
 
-- Go to http://localhost:5000/
+```bash
+$ cd ..
+$ npm run dev
+```
 
-## Resources Used:
+### Open backend in browser
 
-- [Google Books API ](https://developers.google.com/books/docs/overview)
+- Go to http://localhost:3001/companies . Replace companies with database location you wish to see.
+
+### Open frontend in browser
+
+- Go to http://localhost:5173
 
 ## Technology Used
 
-- Python
-- Flask
-- WTForms
-- SQLAlchemy
-- [Bootstrap](https://getbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Google Fonts](https://fonts.google.com/)
+### Full-stack
+
+- concurrently – Run multiple commands (e.g., start backend & frontend) simultaneously
+
+### Backend
+
+- bcrypt – Hash and compare passwords securely
+- body-parser – Parse incoming request bodies in middleware
+- colors – Add color to console logs for better readability
+- cors – Enable Cross-Origin Resource Sharing (CORS) for API requests
+- dotenv – Load environment variables from a .env file
+- express – Minimalist web framework for Node.js
+- jsonschema – Validate JSON data against a schema
+- jsonwebtoken – Create and verify JSON Web Tokens (JWT) for authentication
+- morgan – HTTP request logger for Express apps
+- pg – PostgreSQL client for Node.js
+
+Frontend
+
+- axios – HTTP client for making API requests
+- dotenv – Load environment variables in the frontend
+- font-awesome – Icon library for adding scalable vector icons
+- jwt-decode – Decode JWTs on the client side
+- react – JavaScript library for building åuser interfaces
+- react-dom – Render React components in the DOM
+- react-icons – Import and use various icons as React components
+- react-router-dom – Handle routing and navigation in a React app
