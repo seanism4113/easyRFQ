@@ -1,0 +1,21 @@
+.PageCard {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+	margin: 10px;
+	padding: 10px;
+}
+
+.PageCard-link {
+	color: rgb(50, 43, 43);
+}
+
+.PageCard:hover {
+	color: #535bf2;
+	background-color: rgb(242, 241, 241);
+}
+
+.PageCard h3 {
+	margin-top: 0px;
+}
