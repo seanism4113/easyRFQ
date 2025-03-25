@@ -16,23 +16,23 @@ EasyRFQ is a user-friendly platform designed to streamline the process of creati
 
 ## EasyRFQ | HomePage Logged In
 
-![HomePage](readMeImages/EasyRFQ%20Home.png)
+![HomePage](EasyRFQ/readMeImages/EasyRFQ%20Home.png)
 
 ## EasyRFQ | Item Maintenance
 
-![Item Maintenance](readMeImages/Item%20Maintenance.png)
+![Item Maintenance](EasyRFQ/readMeImages/Item%20Maintenance.png)
 
 ## EasyRFQ | Customer Maintenance
 
-![Customer Maintenance](readMeImages/Customer%20Maintenance.png)
+![Customer Maintenance](EasyRFQ/readMeImages/Customer%20Maintenance.png)
 
 ## EasyRFQ | RFQ List
 
-![RFQ List view](readMeImages/RFQ%20Details.png)
+![RFQ List view](EasyRFQ/readMeImages/RFQ%20Details.png)
 
 ## EasyRFQ | Quote Template
 
-![Quote Template](readMeImages/Quote%20Template.png)
+![Quote Template](EasyRFQ/readMeImages/Quote%20Template.png)
 
 ## Setup
 
